@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: rgba(255, 166, 0, 0.877);
+    /* overflow-y: hidden; */
+  }
+
+.computer{
+    margin-left: 40%;
+}
+
+
+.ai{
+    width: 10%;
+    margin-left: 15%;
+}
+
+
+.text{
+    margin-top: -7%;
+    margin-left: 10%;
+}
+
+
+ .text h3{
+    position: relative;
+    font-size: xx-large;
+}
+
+/* .text h4{
+
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 4%;
+} */
+
+
+.player{
+    margin-top: 2%;
+    margin-left: 40%;
+ position: absolute;
+}
+
+
+.user{
+    width: 50%;
+    position: absolute;
+    margin-left: -100%;
+    margin-top: 70%;
+}
+
+
+
+/* 
+.text h4{
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 7%;
+} */
+
+#computer-action {
+    width: 15%;
+    transform: rotate(170deg);
+}
+
+.player-action{
+    width: 50%;
+
+}
+
+#choice{
+    position: absolute;
+    display: flex;
+    gap: 30%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+#again-btn{
+    padding: 20px 50px;
+    background: #ff5252;
+    border: 1px solid #000;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    visibility: hidden;
+}
+
+#Player-counter{
+position: absolute;
+    margin-left: 50%;
+}

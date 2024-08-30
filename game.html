@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Papper Scissors</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <section id="main-interface">
+      <div
+        id="message"
+        style="visibility: hidden; font-size: xx-large; font-weight: 600"
+      ></div>
+
+      <div id="choice">
+        <button
+          id="rock"
+          style="
+            background: #576574;
+            padding: 30px 50px;
+            color: aliceblue;
+            border: 1px solid #fff;
+            cursor: pointer;
+          "
+        >
+          Rock
+        </button>
+        <button
+          id="papper"
+          style="
+            background: #c8d6e5;
+            padding: 30px 50px;
+            color: black;
+            border: 1px solid #fff;
+            cursor: pointer;
+            display: inline-block; /* Ensures the button behaves as a block element */
+            text-align: center; /* Centers text inside the button */
+          "
+        >
+          Papper
+        </button>
+
+        <button
+          id="scissor"
+          style="
+            background: #ff7675;
+            padding: 30px 50px;
+            color: aliceblue;
+            border: 1px solid #fff;
+            cursor: pointer;
+          "
+        >
+          Scissor
+        </button>
+      </div>
+
+      <button id="again-btn" type="submit">Try Again !</button>
+
+      <div class="computer">
+        <img class="ai" src="ai.png" alt="" srcset="" />
+        <div class="text">
+          <h3 id="Ai-counter">AI</h3>
+        </div>
+
+        <img
+          style="visibility: hidden"
+          id="computer-action"
+          src="stone.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="player">
+        <img
+          style="visibility: hidden"
+          id="player-action"
+          src="Scissors.png"
+          alt=""
+          srcset=""
+        />
+        <img class="user" src="User.png" alt="" srcset="" />
+        <div class="text">
+          <h3 id="Player-counter">YOU</h3>
+        </div>
+      </div>
+    </section>
+    <audio id="music" src="music.mp3" type="audio/mpeg" autoplay loop></audio>
+    <audio id="success" src="success.mp3" ></audio>
+    <audio id="lost" src="lost.mp3" ></audio>
+    <audio id="draw" src="draw.mp3" ></audio>
+    
+    <script src="game.js"></script>
+  </body>
+</html>
